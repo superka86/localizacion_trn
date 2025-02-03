@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="portal_bdv_payment.payment_method_bdv_in" model="account.payment.method">
+            <field name="name">BDV</field>
+            <field name="code">bdv</field>
+            <field name="payment_type">inbound</field>
+        </record>
+
+        <record id="portal_bdv_payment.payment_method_bdv_p2p_in" model="account.payment.method">
+            <field name="name">BDV P2P</field>
+            <field name="code">bdv_p2p</field>
+            <field name="payment_type">inbound</field>
+        </record>
+
+    </data>
+</odoo>

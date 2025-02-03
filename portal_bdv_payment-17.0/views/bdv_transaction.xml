@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="acquirer_transaction_form_bdv" model="ir.ui.view">
+        <field name="name">payment.transaction.form.inherit</field>
+        <field name="model">payment.transaction</field>
+        <field name="inherit_id" ref="payment.payment_transaction_form" />
+        <field name="arch" type="xml">
+            <xpath expr='//field[@name="provider_id"]' position='after'>
+                <field name="payment_title" invisible="provider_code != 'bdv'"/>
+                <field name="payment_description" invisible="provider_code !=  'bdv' " />
+                <field name="letter" invisible="provider_code != 'bdv' "  />
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record model="ir.cron" id="cron_verify_payment_ipg">
+    <field name="name">Verify payment transactions of BDV IPG</field>
+    <field name="model_id" ref="portal_bdv_payment.model_payment_transaction"/>
+    <field name="state">code</field>
+    <field name="code">model._verify_payment_ipg(env)</field>
+    <field name="user_id" ref="base.user_root"/>
+    <field name="interval_number">25</field> <!-- To decide clearly -->
+    <field name="interval_type">minutes</field>
+    <field name="numbercall">-1</field>
+  </record>
+
+  <record model="ir.cron" id="cron_cancel_old_sale_order">
+    <field name="name">Cancel Old Sale Orders of BDV IPG</field>
+    <field name="model_id" ref="portal_bdv_payment.model_payment_transaction"/>
+    <field name="state">code</field>
+    <field name="code">model._cancel_old_sale_order()</field>
+    <field name="user_id" ref="base.user_root"/>
+    <field name="interval_number">1</field> <!-- To decide clearly -->
+    <field name="interval_type">days</field>
+    <field name="numbercall">-1</field>
+  </record>
+  <record model="ir.cron" id="cron_reprocess_all_after_done">
+    <field name="name">Reprocess All After Done of BDV IPG</field>
+    <field name="model_id" ref="portal_bdv_payment.model_payment_transaction"/>
+    <field name="state">code</field>
+    <field name="code">model._reprocess_all_after_done_bdv()</field>
+    <field name="user_id" ref="base.user_admin"/>
+    <field name="interval_number">10</field> <!-- To decide clearly -->
+    <field name="interval_type">minutes</field>
+    <field name="numbercall">-1</field>
+    <field name="active" eval="False"/>
+  </record>
+</odoo>

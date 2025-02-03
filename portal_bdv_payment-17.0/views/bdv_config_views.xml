@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="acquirer_form_bdv" model="ir.ui.view">
+        <field name="name">payment.provider.form.inherit</field>
+        <field name="model">payment.provider</field>
+        <field name="inherit_id" ref="payment.payment_provider_form"/>
+        <field name="arch" type="xml">
+            <xpath expr='//group[@name="provider_config"]' position='inside'>
+                <group invisible="code != 'bdv' ">
+
+                    <field name="user" required="code == 'bdv' and state != 'disabled' " password="True"/>
+                    <field name="password" required="code == 'bdv' and state != 'disabled' " password="True"/>
+
+                    <field name="url"/>
+                    <field name="url_to_return"/>
+                    <field name="url_auth" />
+                    <field name="pricelist_id" required="code == 'bdv' and state == 'enabled' " />
+                    <field name="default_url" readonly="1"/>
+                </group>
+                <group invisible="code != 'bdv_p2p' ">
+                    <field name="url" />
+                    <field name="api_key" required="code == 'bdv_p2p' "  password="True" />
+                    <field name="receiver_phone"  required="code == 'bdv_p2p' "   password="True" />
+                    <field name="default_url"  readonly="1" />
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
