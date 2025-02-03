@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="can_set_product_price" model="res.groups">
+            <field name="name">Can Set Product Price</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,5 @@
+
+                            Teran V16
+account_move_partner_tags       V16
+block_product_sale_price        V16
+portal_bdv_payment-17.0         V16     (Autor: INGENT)
