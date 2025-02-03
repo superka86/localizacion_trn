@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="purchase_sale_price_action" model="ir.actions.act_window">
+        <field name="name">Sales price</field>
+        <field name="res_model">purchase.sale.price</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="purchase_sale_price_view_form" model="ir.ui.view">
+        <field name="name">purchase.sale.price.view.form</field>
+        <field name="model">purchase.sale.price</field>
+        <field name="arch" type="xml">
+            <form string="Porcentaje de precio de venta">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" readonly="1"/>
+                            <field name="order_id" readonly="1" />
+                        </group>
+                        <group>
+                            <field name="general_porcent" />
+                            <button name="update_general_porcent" type="object" string="Actualizar porcentaje"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="products" string="Products">
+                            <field name="order_line_ids" domain="[('order_id', '=', order_id)]">
+                                <tree editable="botom">
+                                    <field name="name" />
+                                    <field name="product_standard_price" string="Costo Anterior" optional="hide"/>
+                                    <field name="product_list_price" string="Precio Anterior" optional="hide"/>
+                                    <field name="product_current_profit_porcent" string="Porcentaje" optional="hide"/>
+                                    <field name="price_unit" string="Costo en Compra"/>
+                                    <field name="computed_sale_price_porcent" />
+                                    <field name="computed_product_sale_price" />
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <footer>
+                    <button class="btn btn-primary" name="validate_form" string="Validar" type="object" 
+                        confirm="Esta accion es permanente, esta seguro que desea continuar?"/>
+                    <button string="Cancelar" class="oe_link" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>

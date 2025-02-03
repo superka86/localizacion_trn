@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+rt_purchase_report.access_rt_purchase_report,access_rt_purchase_report,rt_purchase_report.model_rt_purchase_report,base.group_user,1,1,1,1
+rt_purchase_report.access_rt_purchase_report_line,access_rt_purchase_report_line,rt_purchase_report.model_rt_purchase_report_line,base.group_user,1,1,1,1

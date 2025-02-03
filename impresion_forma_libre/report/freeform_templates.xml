@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="freeform_letter_lang_template">
+    <t t-call="web.html_container">
+      <t t-foreach="docs" t-as="o">
+        <t t-call="impresion_forma_libre.freeform_template" t-lang="o.partner_id.lang" />
+      </t>
+    </t>
+  </template>
+
+  <template id="freeform_half_letter_lang_template">
+    <t t-call="web.html_container">
+      <t t-foreach="docs" t-as="o">
+        <t t-call="impresion_forma_libre.freeform_template" t-lang="o.partner_id.lang" />
+      </t>
+    </t>
+  </template>
+
+  <template id="freeform_template">
+    <div class="article small" style="font-family: 'calibri'; font-size: x-small;">
+      <div class="row">
+        <div class="col-auto">
+          <strong>Partner:</strong>
+          <span t-field="o.partner_id" />
+          <br />
+          <strong>Address:</strong>
+          <span t-out="o.partner_id._display_address(True)" />
+          <br />
+          <strong>Phone:</strong>
+          <span t-field="o.partner_id.phone" />
+          <br />
+          <strong>VAT:</strong>
+          <span t-field="o.partner_id.vat" />
+          <br />
+          <strong>Payment condition:</strong>
+          <span t-field="o.fiscal_payment_condition" />
+          <br />
+          <t t-if="o.fiscal_currency_id">
+            <strong>Rate:</strong>
+            <span
+              t-if="o._get_rate(o.currency_id, o.fiscal_currency_id) > o._get_rate(o.fiscal_currency_id, o.currency_id)"
+              t-out="o._get_rate(o.currency_id, o.fiscal_currency_id)"
+              t-options="{'widget': 'monetary', 'display_currency': o.fiscal_currency_id}" />
+            <span t-else="" t-out="o._get_rate(o.fiscal_currency_id, o.currency_id)"
+              t-options="{'widget': 'monetary', 'display_currency': o.currency_id}" />
+          </t>
+        </div>
+        <div class="col-auto text-end">
+          <t t-if="o.company_id.municipality">
+            <strong>Municipality</strong>
+            <span t-field="o.company_id.municipality" />
+            <br />
+          </t>
+          <strong>N° Invoice:</strong>
+          <span t-field="o.fiscal_correlative" />
+          <br />
+          <strong>Date:</strong>
+          <span t-field="o.invoice_date"/>
+          <br />
+          <strong>Due date:</strong>
+          <span t-field="o.invoice_date_due" />
+          <br />
+          <t t-if="o.company_id.ruc">
+            <strong>RUC:</strong>
+            <span t-field="o.company_id.ruc" />
+            <br />
+          </t>
+          <t t-if="o.company_id.taxpayer_license">
+            <strong>LAE:</strong>
+            <span t-field="o.company_id.taxpayer_license" />
+            <br />
+          </t>
+        </div>
+      </div>
+      <h4 t-if="o.move_type == 'out_invoice'" class="text-center">Invoice</h4>
+      <h4 t-if="o.move_type == 'out_refund'" class="text-center">Credit Note</h4>
+      <div class="">
+        <table class="table table-sm">
+          <thead class="thead">
+            <tr>
+              <th scope="col" class="text-start">#</th>
+              <th scope="col" class="text-start">Product</th>
+              <th scope="col" class="text-start">Description</th>
+              <th scope="col" class="text-end">Unit Price</th>
+              <th scope="col" class="text-end">Quantity</th>
+              <th scope="col" class="text-end">Amount Untaxed</th>
+              <th scope="col" class="text-end">Taxes</th>
+              <th scope="col" class="text-end">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr t-foreach="o.invoice_line_ids" t-as="line">
+              <td t-out="line_index + 1" />
+              <td>
+                <span t-field="line.product_id" />
+              </td>
+              <td>
+                <span t-field="line.name" />
+              </td>
+              <td class="text-end">
+                <span t-field="line.price_unit" />
+              </td>
+              <td class="text-end">
+                <span t-field="line.quantity" />
+                <span t-field="line.product_id.uom_id"/>
+              </td>
+              <td class="text-end">
+                <span t-field="line.price_subtotal" />
+              </td>
+              <td class="text-end">
+                <span t-out="line.price_total - line.price_subtotal"
+                  t-options="{'widget': 'monetary', 'display_currency': o.currency_id}" />
+              </td>
+              <td class="text-end">
+                <span t-field="line.price_total" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="clearfix">
+        <div id="total" class="row">
+          <div class="col-auto me-2">
+            <t t-if="o.fiscal_currency_id">
+              <div class="text-center">
+                <strong t-if="o.currency_id.name != 'VEB'" class="ml-auto">Summary in Document Currency</strong>
+                <strong t-else="" class="ml-auto">Summary in Document Currency</strong>
+              </div>
+              <table class="table table-sm table-borderless">
+                <t t-set="tax_totals" t-value="o.fiscal_tax_totals" />
+                <t t-call="account.document_tax_totals" />
+              </table>
+            </t>
+          </div>
+          <div class="col-auto ms-2">
+            <div class="text-center">
+              <strong t-if="o.fiscal_currency_id.name == 'VEB'" class="ml-auto">Summary in Document Currency</strong>
+              <strong t-else="" class="ml-auto">Summary in Fiscal Currency</strong>
+            </div>
+            <table class="table table-sm table-borderless">
+              <t t-set="tax_totals" t-value="o.tax_totals" />
+              <t t-call="account.document_tax_totals" />
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+</odoo>

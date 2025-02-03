@@ -1,0 +1,257 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* rt_purchase_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-23 15:01+0000\n"
+"PO-Revision-Date: 2023-10-23 15:01+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: rt_purchase_report
+#: model:ir.actions.report,print_report_name:rt_purchase_report.action_report_rt_purchase_report
+msgid "'%s' % object.name"
+msgstr ""
+
+#. module: rt_purchase_report
+#: model:ir.model.fields.selection,name:rt_purchase_report.selection__rt_purchase_report_line__invoice_type__01
+msgid "01 - Invoice"
+msgstr "01 - Factura"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields.selection,name:rt_purchase_report.selection__rt_purchase_report_line__invoice_type__02
+msgid "02 - Debit Note"
+msgstr "02 - Nota de débito"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields.selection,name:rt_purchase_report.selection__rt_purchase_report_line__invoice_type__03
+msgid "03 - Credit Note"
+msgstr "03 - Nota de crédito"
+
+#. module: rt_purchase_report
+#: model:ir.actions.report,name:rt_purchase_report.action_report_rt_purchase_report
+msgid "3DV Purchase Book Report"
+msgstr "Informe del libro de compras 3DV"
+
+#. module: rt_purchase_report
+#: model_terms:ir.ui.view,arch_db:rt_purchase_report.rt_purchase_report_view_form
+msgid ""
+"<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" "
+"title=\"Arrow\"/>"
+msgstr ""
+
+#. module: rt_purchase_report
+#: model:ir.model.fields.selection,name:rt_purchase_report.selection__rt_purchase_report__purchase_type__all
+msgid "All"
+msgstr "Todas"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__amount_untaxed
+msgid "Amount Untaxed"
+msgstr "Base Imponible"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report__company_id
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__control_number
+msgid "Control Number"
+msgstr "Número de control"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields.selection,name:rt_purchase_report.selection__rt_purchase_report__purchase_type__fiscal
+msgid "Control number"
+msgstr "Número de control"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report__create_uid
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report__create_date
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report__currency_id
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: rt_purchase_report
+#: model_terms:ir.ui.view,arch_db:rt_purchase_report.rt_purchase_report_view_form
+msgid "Date"
+msgstr "Fecha"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report__date_from
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__date_from
+msgid "Date From"
+msgstr "Desde"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report__date_to
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__date_to
+msgid "Date To"
+msgstr "Hasta"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report__display_name
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__invoice_type
+msgid "Document Type"
+msgstr "Tipo de Documento"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__amount_exempt
+msgid "Exempt Amount"
+msgstr "Monto exento"
+
+#. module: rt_purchase_report
+#: model_terms:ir.ui.view,arch_db:rt_purchase_report.rt_purchase_report_view_form
+msgid "Generate Report"
+msgstr "Generar informe"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report__id
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__id
+msgid "ID"
+msgstr "IDENTIFICACIÓN"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__invoice_id
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__invoice_date
+msgid "Invoice Date"
+msgstr "Fecha de la factura"
+
+#. module: rt_purchase_report
+#: model_terms:ir.ui.view,arch_db:rt_purchase_report.rt_purchase_report_view_form
+msgid "Invoice Lines"
+msgstr "Líneas de factura"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report____last_update
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line____last_update
+msgid "Last Modified on"
+msgstr "Última modificación"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report__write_uid
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report__write_date
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report__line_ids
+msgid "Line"
+msgstr "Línea"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields.selection,name:rt_purchase_report.selection__rt_purchase_report__purchase_type__no_fiscal
+msgid "No control number"
+msgstr "Sin Numero de control"
+
+#. module: rt_purchase_report
+#: model_terms:ir.actions.act_window,help:rt_purchase_report.action_rt_purchase_report
+msgid "No create Reports"
+msgstr "No hay informes creados"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__partner_id
+msgid "Partner"
+msgstr "Proveedor"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__purchase_report_id
+msgid "Purchase  Book"
+msgstr "Libro de Compras"
+
+#. module: rt_purchase_report
+#: model:ir.actions.act_window,name:rt_purchase_report.action_rt_purchase_report
+#: model:ir.model,name:rt_purchase_report.model_rt_purchase_report
+#: model:ir.ui.menu,name:rt_purchase_report.purchase_report_menu
+#: model_terms:ir.ui.view,arch_db:rt_purchase_report.rt_purchase_report_view_form
+#: model_terms:ir.ui.view,arch_db:rt_purchase_report.rt_purchase_report_view_tree
+msgid "Purchase Report"
+msgstr "Libro de Compras"
+
+#. module: rt_purchase_report
+#: model:ir.model,name:rt_purchase_report.model_rt_purchase_report_line
+msgid "Purchase Report Line"
+msgstr "Línea de informes de compra"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report__purchase_type
+msgid "Purchase Type"
+msgstr "Tipo de compra"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__invoice_reference
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: rt_purchase_report
+#: model:ir.model,name:rt_purchase_report.model_report_rt_purchase_report_purchase_report_xlsx
+msgid "Report XLSX"
+msgstr "Informe XLSX"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__retention_line_id
+msgid "Retention"
+msgstr "Retención"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__amount_tax
+msgid "Tax"
+msgstr "Impuesto"
+
+#. module: rt_purchase_report
+#. odoo-python
+#: code:addons/rt_purchase_report/models/purchase_book_line.py:0
+#, python-format
+msgid "The date on the invoice %s is required"
+msgstr "Se requiere la fecha en la factura %s"
+
+#. module: rt_purchase_report
+#. odoo-python
+#: code:addons/rt_purchase_report/models/purchase_report.py:0
+#, python-format
+msgid "The dates are required for registration"
+msgstr "Las fechas son necesarias para el registro"
+
+#. module: rt_purchase_report
+#: model:ir.model.fields,field_description:rt_purchase_report.field_rt_purchase_report_line__amount_total
+msgid "Total Amount"
+msgstr "Cantidad total"

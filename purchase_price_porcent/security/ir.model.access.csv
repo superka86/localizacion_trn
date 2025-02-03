@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+purchase_price_porcent.access_purchase_sale_price,access_purchase_sale_price,purchase_price_porcent.model_purchase_sale_price,base.group_user,1,1,1,1

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="rt_monthly_resume_wizard_action" model="ir.actions.act_window">
+        <field name="name">resume wizard</field>
+        <field name="res_model">rt.monthly.resume.wizard</field>
+        <field name="view_mode">form</field>
+    </record>
+
+    <record id="rt_monthly_resume_wizard_view_form" model="ir.ui.view">
+        <field name="name">rt.monthly.resume.wizard.view.form</field>
+        <field name="model">rt.monthly.resume.wizard</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" />
+                            <field name="currency_id" create="0"/>
+                        </group>
+                        <group>
+                            <field name="start_date" />
+                            <field name="end_date" />
+                        </group>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="confirm_action"
+                        string="Confirm"
+                        type="object"
+                        data-hotkey="q"
+                        class="btn-primary"/>
+                    <button string="Discard"
+                        class="btn-secondary"
+                        special="cancel" data-hotkey="z" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>

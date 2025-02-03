@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+rt_inventory_book.access_rt_inventory_resume,access_rt_inventory_resume,rt_inventory_book.model_rt_inventory_resume,base.group_user,1,1,1,1
+rt_inventory_book.access_rt_inventory_resume_line,access_rt_inventory_resume_line,rt_inventory_book.model_rt_inventory_resume_line,base.group_user,1,1,1,1
+rt_inventory_book.access_rt_monthly_resume_wizard,access_rt_monthly_resume_wizard,rt_inventory_book.model_rt_monthly_resume_wizard,base.group_user,1,1,1,1
