@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="action_retention" model="ir.actions.act_window">
+    <field name="name">Retenciones</field>
+    <field name="res_model">retention</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">
+        No holds have been created yet
+      </p>
+    </field>
+  </record>
+
+  <record id="retention_form_view" model="ir.ui.view">
+    <field name="name">retention.form.view</field>
+    <field name="model">retention</field>
+    <field name="arch" type="xml">
+      <form string="Retention">
+        <header>
+          <field name="state" widget="statusbar" />
+          <button string="Imprimir Comprobante" name="print_retention" type="object"
+            class="btn btn-primary" invisible="state != 'posted'" />
+          <button string="Exportar a TXT" name="print_text_retention" type="object"
+            class="btn btn-primary"
+            invisible="state != 'posted' or type == 'islr'" />
+          <button string="Exportar a XML" name="print_text_retention" type="object"
+            class="btn btn-primary"
+            invisible="state != 'posted' or type != 'islr'" />
+          <button string="Confirmar" name="button_confirm" type="object" class="btn btn-primary"
+            invisible="state != 'draft'" />
+          <button string="Convertir en Borrador" name="button_draft" type="object" class="btn"
+            invisible="state == 'draft'" />
+          <button string="Cancelar" name="button_cancel" type="object" class="btn"
+            invisible="state != 'draft'" />
+        </header>
+        <sheet>
+          <div class="oe_button_box" name="button_box">
+            <button name="button_open_journal_entry" type="object" class="oe_stat_button"
+              icon="fa-bars">
+              <div class="o_stat_info">
+                <span class="o_stat_text">Journal Entry</span>
+              </div>
+            </button>
+          </div>
+          <div class='oe_tittle'>
+            <span class="o_form_label">Vendor Retention</span>
+            <h1>
+              <field name="name" readonly="1" />
+            </h1>
+          </div>
+          <group>
+            <group>
+              <field name="correlative" readonly="state != 'draft'" />
+              <field name="partner_id" readonly="state != 'draft'" />
+              <field name="currency_id" readonly="state != 'draft'" />
+              <field name="type" readonly="state != 'draft'" />
+            </group>
+            <group>
+              <field name="period" />
+              <field name="company_id" />
+              <field name="date" />
+              <label for="journal_id" string="Journal" />
+              <div class="row">
+                <field class="col-auto oe_inline" name="journal_id"
+                  options="{'no_open': True, 'no_create': True}" />
+                <span class="col-auto oe_inline">in</span>
+                <field class="col-auto oe_inline" name="journal_currency" />
+              </div>
+              <field name="currency_id" invisible="1" />
+              <field name="is_legal_entity" invisible="type != 'islr'" />
+            </group>
+          </group>
+          <notebook>
+            <page name="invoices" string="Facturas Agregadas">
+              <field name="line_ids" readonly="state == 'posted'">
+                <tree editable="bottom" string="Factura">
+                  <field name="existing_invoice_ids" column_invisible="True" />
+                  <field name="state" column_invisible="True" />
+                  <field name="type" column_invisible="True" />
+                  <field name="invoice_id" readonly="state != 'draft'" options="{'no_create': True}"/>
+                  <field name="credit_note_ids" optional="hide" readonly="1" />
+                  <field name="move_id" optional="hide" />
+                  <field name="partner_id" optional="hide" />
+                  <field name="ret_tax_id" optional="show" />
+                  <field name="invoice_ref" />
+                  <field name="control_number" />
+                  <field name="registry_type" optional="show"/>
+                  <field name="iae_type" optional="show"
+                    invisible="type != 'iae'" />
+                  <field name="company_id" optional="hide" />
+                  <field name="amount_base" widget="monetary" optional="show" />
+                  <field name="amount_untaxed" widget="monetary" optional="show" />
+                  <field name="amount_tax" widget="monetary" optional="show" />
+                  <field name="amount_total" widget="monetary" optional="hide" />
+                  <field name="amount_subtracting" widget="monetary" optional="hide" />
+                  <field name="amount_detained" widget="monetary" optional="show" />
+                  <field name="currency_id" optional="hide" />
+                  <field name="retention_id" column_invisible="True" />
+                </tree>
+              </field>
+              <div>
+                <h3 class="text-right">Total Detained:</h3>
+                <h2 class="text-right">
+                  <field name="amount_total" widget="monetary" />
+                </h2>
+              </div>
+            </page>
+            <page string="Other Information" name="other_information">
+              <group name="account_group" string="Accounting">
+                <field name="debit_account_id" />
+                <field name="credit_account_id" />
+              </group>
+              <group name="image_group">
+                <field name="signature" widget="image" class="float-left oe_avatar" />
+              </group>
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="retention_tree_view" model="ir.ui.view">
+    <field name="name">retention.tree.view</field>
+    <field name="model">retention</field>
+    <field name="arch" type="xml">
+      <tree decoration-info="state == 'draft'">
+        <header>
+          <button string="Exportar a TXT / XML" name="print_text_retention" type="object"
+            class="ml-1 btn" />
+        </header>
+        <field name="name" optional="show" />
+        <field name="correlative" optional="show" />
+        <field name="partner_id" optional="show" />
+        <field name="period" optional="show" />
+        <field name="company_id" optional="show" />
+        <field name="amount_total" sum="Total Retenido" options="{'currency_field': 'currency_id'}" />
+        <field name="type" optional="show" widget="badge" decoration-success="type == 'iva'"
+          decoration-warning="type == 'iae'" decoration-danger="type == 'islr'"
+        />
+        <field name="state" widget="badge" decoration-success="state == 'posted'"
+          decoration-info="state == 'draft'" />
+        <field name="currency_id" column_invisible="True" />
+      </tree>
+    </field>
+  </record>
+
+  <record id="retention_view_search" model="ir.ui.view">
+    <field name="name">retention.view.search</field>
+    <field name="model">retention</field>
+    <field name="arch" type="xml">
+      <search string="Search Retention">
+        <field name="name" />
+        <field name="correlative" />
+        <field name="partner_id" />
+        <field name="type" />
+        <field name="period" />
+        <field name="state" />
+        <filter name="state" string="Posted" domain="[('state', '=', 'posted')]" />
+        <filter name="state" string="Draft" domain="[('state', '=', 'draft')]" />
+        <filter name="state" string="Cancel" domain="[('state', '=', 'cancel')]" />
+        <filter name="type" string="IVA" domain="[('type', '=', 'iva')]" />
+        <filter name="type" string="ISLR" domain="[('type', '=', 'islr')]" />
+        <filter name="type" string="IAE" domain="[('type', '=', 'iae')]" />
+        <group name="group_by_group" string="Retention Group By">
+          <filter name="partner_id" string="Partner" context="{'group_by': 'partner_id'}" />
+          <filter name="type" string="Type" context="{'group_by': 'type'}" />
+          <filter name="period" string="Period" context="{'group_by': 'period'}" />
+        </group>
+      </search>
+    </field>
+  </record>
+</odoo>

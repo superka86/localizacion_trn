@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="res_config_settings_view_form_inherit_retenciones" model="ir.ui.view">
+    <field name="name">res.config.settings.view.form.inherit</field>
+    <field name="model">res.config.settings</field>
+    <field name="priority" eval="50" />
+    <field name="inherit_id" ref="base.res_config_settings_view_form" />
+    <field name="arch" type="xml">
+      <xpath expr="//form" position="inside">
+        <app string="Retentions" name="retenciones">
+          <block title="Account" name="titulo">
+          <block name="default_accounting_settings_container">
+            <setting>
+              <!-- <div class="o_setting_left_pane" /> -->
+              <!-- <div class="o_setting_right_pane"> -->
+                <span class="o_form_label">Journals</span>
+                <span class="fa fa-lg fa-building-o" title="Values set here are company-specific."
+                  aria-label="Values set here are company-specific."
+                  groups="base.group_multi_company" role="img" />
+                <div class="text-muted">
+                  Default Journal for registration of retentions
+                </div>
+                <div class="content-group">
+                  <div class="row mt16">
+                    <label for="iva_retention_journal_id" class="col-lg-5 o_light_label" />
+                    <field name="iva_retention_journal_id" options="{'no_create': True}" />
+                  </div>
+                  <div class="row">
+                    <label for="islr_retention_journal_id" class="col-lg-5 o_light_label" />
+                    <field name="islr_retention_journal_id" options="{'no_create': True}" />
+                  </div>
+                  <div class="row">
+                    <label for="iae_retention_journal_id" class="col-lg-5 o_light_label" />
+                    <field name="iae_retention_journal_id" options="{'no_create': True}" />
+                  </div>
+                </div>
+              <!-- </div> -->
+            </setting>
+            <setting>
+              <!-- <div class="o_setting_left_pane" /> -->
+              <!-- <div class="o_setting_right_pane"> -->
+                <span class="o_form_label">Accounts</span>
+                <span class="fa fa-lg fa-building-o" title="Values set here are company-specific."
+                  aria-label="Values set here are company-specific."
+                  groups="base.group_multi_company" role="img" />
+                <div class="text-muted">
+                  Accounting accounts by default for retentions
+                </div>
+                <div class="content-group">
+                  <div class="row mt16">
+                    <label for="iva_account_id" class="col-lg-5 o_light_label" />
+                    <field name="iva_account_id" options="{'no_create': True}" />
+                  </div>
+                  <div class="row">
+                    <label for="islr_account_id" class="col-lg-5 o_light_label" />
+                    <field name="islr_account_id" options="{'no_create': True}" />
+                  </div>
+                  <div class="row">
+                    <label for="iae_account_id" class="col-lg-5 o_light_label" />
+                    <field name="iae_account_id" options="{'no_create': True}" />
+                  </div>
+                </div>
+              <!-- </div> -->
+            </setting>
+          </block>
+          <block title="Reports">
+          <setting name="default_report_settings_container">
+            <setting>
+              <!-- <div class="o_setting_left_pane" /> -->
+              <!-- <div class="o_setting_right_pane"> -->
+                <span class="o_form_label">Signature</span>
+                <span class="fa fa-lg fa-building-o" title="Values set here are company-specific."
+                  aria-label="Values set here are company-specific."
+                  groups="base.group_multi_company" role="img" />
+                <div class="text-muted">
+                  Add a default firm on the page of your retentions
+                </div>
+                <div class="col-12 col-lg-6 mt16">
+                  <field name="retention_signature" widget="image" />
+                </div>
+              <!-- </div> -->
+            </setting>
+            
+          </setting>
+          <setting>
+              
+              <field name="active_retention_theoretical" />
+              <!-- <div class="o_setting_right_pane"> -->
+                <span class="o_form_label">Theoretical report</span>
+                <span class="fa fa-lg fa-building-o" title="Values set here are company-specific."
+                  aria-label="Values set here are company-specific."
+                  groups="base.group_multi_company" role="img" />
+                <div class="text-muted">
+                  Activate a theoretical report of the amount to be paid including the retentions
+                  applied to the invoice
+                </div>
+              <!-- </div> -->
+            </setting>
+          
+          </block>
+          
+
+          </block>
+
+          
+        </app>
+      </xpath>
+    </field>
+  </record>
+  <record id="action_retenciones_configuration" model="ir.actions.act_window">
+    <field name="name">Settings</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">res.config.settings</field>
+    <field name="view_mode">form</field>
+    <field name="target">inline</field>
+    <field name="context">{'module' : 'retenciones', 'bin_size': False}</field>
+  </record>
+</odoo>

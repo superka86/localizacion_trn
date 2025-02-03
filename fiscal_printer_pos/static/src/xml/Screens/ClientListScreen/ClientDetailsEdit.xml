@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="PartnerDetailsEdit" t-inherit="point_of_sale.PartnerDetailsEdit" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('partner-details-left')]/div[last()]" position="after">
+            <div class="partner-detail">
+                <span class="label">Ced/Rif</span>
+                <input class="detail" name="ced_rif"
+                        t-model="changes.ced_rif"
+                        t-on-change="captureChange" 
+                        placeholder="Ced/Rif" />
+                <!-- t-att-value="props.partner.ced_rif || ''" -->
+            </div>
+        </xpath>
+    </t>
+</templates>

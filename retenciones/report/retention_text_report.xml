@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="report_text_iva_retention" name="Text Iva"><t t-foreach="docs" t-as="retention"><t t-esc="retention.get_retention_text_lines()"/>
+</t></template>
+
+
+<template id="report_text_islr_retention" name="Text ISLR">
+<RelacionRetencionesISLR t-att-Periodo="docs[0].period[:6]" t-att-RifAgente="docs.sanitize_string(env.company.company_registry or env.company.vat)"><t t-foreach="docs" t-as="retention"><t t-foreach="retention.line_ids" t-as="line">
+  <DetalleRetencion>
+    <RifRetenido><t t-esc="retention.sanitize_string(retention.partner_id.vat or retention.partner_id.ced_rif)"/></RifRetenido>
+    <NumeroFactura><t t-esc="retention.sanitize_string(line.invoice_ref)"/></NumeroFactura>
+    <NumeroControl><t t-esc="retention.sanitize_string(line.control_number)"/></NumeroControl>
+    <FechaOperacion><t t-esc="retention.date.strftime('%d/%m/%Y')"/></FechaOperacion>
+    <CodigoConcepto><t t-esc="line.ret_tax_id.code"/></CodigoConcepto>
+    <MontoOperacion><t t-esc="line.amount_base"/></MontoOperacion>
+    <PorcentajeRetencion><t t-esc="line.ret_tax_id.tax"/></PorcentajeRetencion>
+  </DetalleRetencion></t></t>
+</RelacionRetencionesISLR>
+</template>
+
+<template id="report_text_iae_retention" name="Text ISLR"><t t-foreach="docs" t-as="retention"><t t-esc="retention.get_retention_text_lines()"/>
+</t></template>
+
+
+</odoo>

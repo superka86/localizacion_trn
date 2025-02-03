@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <menuitem id="retentions_menu" name="Retentions" sequence="60"
+    web_icon="retenciones,static/description/icon.png">
+    <menuitem id="menu_retentions_root" name="Retentions">
+      <menuitem id="retention_menu" name="Retentions" action="action_retention" sequence="10"/>
+      <menuitem id="retention_line_menu" name="Retention Lines" action="action_retention_line" sequence="15"/>
+    </menuitem>
+    <menuitem id="menu_settings_retentions" name="Retention Taxes" action="action_retention_tax" />
+  </menuitem>
+</odoo>

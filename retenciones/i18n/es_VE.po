@@ -1,0 +1,1157 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* retenciones
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-17 15:37+0000\n"
+"PO-Revision-Date: 2023-11-17 15:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention_line.py:0
+#, python-format
+msgid "%s retention on %s (%s)"
+msgstr "%s retención sobre %s (%s)"
+
+#. module: retenciones
+#: model:ir.actions.report,print_report_name:retenciones.action_account_move_retention_report
+msgid "'Total con retentciones ' + (object.invoice_name)"
+msgstr "'Total con retentciones ' + (object.invoice_name)"
+
+#. module: retenciones
+#: model:ir.model.fields.selection,name:retenciones.selection__retention_line__registry_type__01
+msgid "01 - Invoice"
+msgstr "01 - Factura"
+
+#. module: retenciones
+#: model:ir.model.fields.selection,name:retenciones.selection__retention_line__registry_type__02
+msgid "02 - Debit Note"
+msgstr "02 - Nota de débito"
+
+#. module: retenciones
+#: model:ir.model.fields.selection,name:retenciones.selection__retention_line__registry_type__03
+msgid "03 - Credit Note"
+msgstr "03 - Nota de crédito"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_form_view
+msgid "<span class=\"col-auto oe_inline\">in</span>"
+msgstr "<span class=\"col-auto oe_inline\">en</span>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "<span class=\"fw-bold\">Date:</span>"
+msgstr "<span class=\"fw-bold\">Fecha:</span>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "<span class=\"fw-bold\">Economic Activity License</span>"
+msgstr "<span class=\"fw-bold\">Licencia de actividad económica</span>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid ""
+"<span class=\"fw-bold\">Fiscal Directorate of the Retention Agent:</span> "
+"<br/>"
+msgstr ""
+"<span class=\"fw-bold\">Dirección fiscal del agente de retención:</span> "
+"<br/>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "<span class=\"fw-bold\">Fiscal address of the retained agent:</span> <br/>"
+msgstr ""
+"<span class=\"fw-bold\">Dirección fiscal del agente retenido:</span> <br/>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid ""
+"<span class=\"fw-bold\">Name or corporate reason for the retention "
+"agent:</span>"
+msgstr ""
+"<span class=\"fw-bold\">Nombre o razón social del agente de "
+"retencion:</span>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid ""
+"<span class=\"fw-bold\">Name or social reason of the retained agent:</span>"
+msgstr "<span class=\"fw-bold\">Nombre o razón social del agente retenido:</span>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "<span class=\"fw-bold\">Period</span>"
+msgstr "<span class=\"fw-bold\">Periodo</span>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "<span class=\"fw-bold\">Receipt Number:</span>"
+msgstr "<span class=\"fw-bold\">N° Comprobante:</span>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "<span class=\"fw-bold\">Reference:</span>"
+msgstr "<span class=\"fw-bold\">Referencia:</span>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "<span class=\"fw-bold\">Single Taxpayer Registration</span>"
+msgstr "<span class=\"fw-bold\">Registro unico de contribuyente</span>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "<span class=\"fw-bold\">VAT of the Retention Agent:</span>"
+msgstr "<span class=\"fw-bold\">RIF del agente de retención:</span>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "<span class=\"fw-bold\">VAT of the retained subject:</span>"
+msgstr "<span class=\"fw-bold\">RIF del sujeto retenido:</span>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.res_config_settings_view_form_inherit_retenciones
+msgid ""
+"<span class=\"o_form_label\">Accounts</span>\n"
+"                <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\" role=\"img\"/>"
+msgstr ""
+"<span class=\"o_form_label\">Cuentas</span>\n"
+"                <span class=\"fa fa-lg fa-building-o\" title=\"Los valores establecidos aquí son específicos de la empresa.\" aria-label=\"Los valores establecidos aquí son específicos de la empresa.\" groups=\"base.group_multi_company\" role=\"img\"/>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.res_config_settings_view_form_inherit_retenciones
+msgid ""
+"<span class=\"o_form_label\">Journals</span>\n"
+"                <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\" role=\"img\"/>"
+msgstr ""
+"<span class=\"o_form_label\">Diario</span>\n"
+"                <span class=\"fa fa-lg fa-building-o\" title=\"Los valores establecidos aquí son específicos de la empresa.\" aria-label=\"Los valores establecidos aquí son específicos de la empresa.\" groups=\"base.group_multi_company\" role=\"img\"/>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.res_config_settings_view_form_inherit_retenciones
+msgid ""
+"<span class=\"o_form_label\">Signature</span>\n"
+"                <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\" role=\"img\"/>"
+msgstr ""
+"<span class=\"o_form_label\">Firma</span>\n"
+"                <span class=\"fa fa-lg fa-building-o\" title=\"Los valores establecidos aquí son específicos de la empresa.\" aria-label=\"Los valores establecidos aquí son específicos de la empresa.\" groups=\"base.group_multi_company\" role=\"img\"/>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.res_config_settings_view_form_inherit_retenciones
+msgid ""
+"<span class=\"o_form_label\">Theoretical report</span>\n"
+"                <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\" role=\"img\"/>"
+msgstr ""
+"<span class=\"o_form_label\">Informe teórico</span>\n"
+"                <span class=\"fa fa-lg fa-building-o\" title=\"Los valores establecidos aquí son específicos de la empresa.\" aria-label=\"Los valores establecidos aquí son específicos de la empresa.\" groups=\"base.group_multi_company\" role=\"img\"/>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_form_view
+msgid "<span class=\"o_form_label\">Vendor Retention</span>"
+msgstr "<span class=\"o_form_label\">Retención de proveedores</span>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_form_view
+msgid "<span class=\"o_stat_text\">Journal Entry</span>"
+msgstr "<span class=\"o_stat_text\">Entrada de diario</span>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "<span>Reception date: _____/_____/________</span>"
+msgstr "<span>Fecha de recepción: _____/_____/________</span>"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "According to article 24 of Decree 1808 dated 05/12/1997"
+msgstr "Según el artículo 24 del decreto 1808 de fecha 12/05/1997"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.res_config_settings_view_form_inherit_retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_form_view
+msgid "Accounting"
+msgstr "Contabilidad"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.res_config_settings_view_form_inherit_retenciones
+msgid "Accounting accounts by default for retentions"
+msgstr "Cuentas contables de forma predeterminada para las retenciones"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.res_config_settings_view_form_inherit_retenciones
+msgid ""
+"Activate a theoretical report of the amount to be paid including the retentions\n"
+"                  applied to the invoice"
+msgstr ""
+"Active un informe teórico del monto a pagar, incluidas las retenciones \\ "
+"nAplicado a la factura"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_bank_statement_line__is_active_theoretical
+#: model:ir.model.fields,field_description:retenciones.field_account_move__is_active_theoretical
+#: model:ir.model.fields,field_description:retenciones.field_account_payment__is_active_theoretical
+#: model:ir.model.fields,field_description:retenciones.field_res_company__active_retention_theoretical
+#: model:ir.model.fields,field_description:retenciones.field_res_config_settings__active_retention_theoretical
+msgid "Activate theoretical"
+msgstr "Activar teórico"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.res_config_settings_view_form_inherit_retenciones
+msgid "Add a default firm on the page of your retentions"
+msgstr "Agregue una firma predeterminada en la página de sus retenciones"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "Affected invoice"
+msgstr "Factura afectada"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_bank_statement_line__iae_retention
+#: model:ir.model.fields,field_description:retenciones.field_account_move__iae_retention
+#: model:ir.model.fields,field_description:retenciones.field_account_payment__iae_retention
+msgid "Amount detained by IAE"
+msgstr "Cantidad detenida por IAE"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_bank_statement_line__islr_retention
+#: model:ir.model.fields,field_description:retenciones.field_account_move__islr_retention
+#: model:ir.model.fields,field_description:retenciones.field_account_payment__islr_retention
+msgid "Amount detained by ISLR"
+msgstr "Cantidad detenida por ISLR"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_bank_statement_line__iva_retention
+#: model:ir.model.fields,field_description:retenciones.field_account_move__iva_retention
+#: model:ir.model.fields,field_description:retenciones.field_account_payment__iva_retention
+msgid "Amount detained by IVA"
+msgstr "Cantidad detenida por IVA"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__invoice_name
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__invoice_id
+msgid "Bill"
+msgstr "Factura"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__invoice_amount
+msgid "Bill amount"
+msgstr "Total de la Factura"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__ref_invoice_amount
+msgid "Bill amount (Referential)"
+msgstr "Total de la Factura (Referencial)"
+
+#. module: retenciones
+#: model:ir.model.fields.selection,name:retenciones.selection__retention__state__cancel
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_view_search
+msgid "Cancel"
+msgstr "Cancelado"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_form_view
+msgid "Cancelar"
+msgstr "Cancelar"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.view_form_account_move_retention_report_wizard
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_tax__code
+msgid "Code"
+msgstr "Código"
+
+#. module: retenciones
+#: model:ir.model,name:retenciones.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__company_id
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__company_id
+#: model:ir.model.fields,field_description:retenciones.field_retention_tax__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: retenciones
+#: model:ir.actions.report,name:retenciones.action_report_retention
+#: model:ir.actions.report,name:retenciones.action_report_text_iae_retention
+#: model:ir.actions.report,name:retenciones.action_report_text_islr_retention
+#: model:ir.actions.report,name:retenciones.action_report_text_iva_retention
+msgid "Comprobante de Retencion"
+msgstr "Comprobante de Retencion"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.account_move_retention_report_template
+msgid "Concepto"
+msgstr "Concepto"
+
+#. module: retenciones
+#: model:ir.model,name:retenciones.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de configuración"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_form_view
+msgid "Confirmar"
+msgstr "Confirmar"
+
+#. module: retenciones
+#: model:ir.model,name:retenciones.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__control_number
+msgid "Control Number"
+msgstr "Número de Control"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "Control number"
+msgstr "Número de control"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_form_view
+msgid "Convertir en Borrador"
+msgstr "Convertir en Borrador"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__correlative
+msgid "Correlative"
+msgstr "Correlativo"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.account_move_in_view
+msgid "Create Retentions"
+msgstr "Crear retenciones"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__create_uid
+#: model:ir.model.fields,field_description:retenciones.field_retention__create_uid
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__create_uid
+#: model:ir.model.fields,field_description:retenciones.field_retention_tax__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__create_date
+#: model:ir.model.fields,field_description:retenciones.field_retention__create_date
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__create_date
+#: model:ir.model.fields,field_description:retenciones.field_retention_tax__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__credit_account_id
+msgid "Credit Account"
+msgstr "Cuenta de crédito"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__currency_id
+#: model:ir.model.fields,field_description:retenciones.field_retention__currency_id
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__currency_id
+#: model:ir.model.fields,field_description:retenciones.field_retention_tax__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__current
+msgid "Current"
+msgstr "Actual"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__debit_account_id
+msgid "Debit Account"
+msgstr "Cuenta de debito"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "Debit or credit note"
+msgstr "Nota de débito o crédito"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_tax__decrement
+msgid "Decrement (ISLR)"
+msgstr "Sustraendo (ISLR)"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.res_config_settings_view_form_inherit_retenciones
+msgid "Default Journal for registration of retentions"
+msgstr "Diario predeterminado para el registro de retenciones"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__amount_detained
+msgid "Detained"
+msgstr "Retenido"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__display_name
+#: model:ir.model.fields,field_description:retenciones.field_retention__display_name
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__display_name
+#: model:ir.model.fields,field_description:retenciones.field_retention_tax__display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "Document type"
+msgstr "Tipo de Documento"
+
+#. module: retenciones
+#: model:ir.model.fields.selection,name:retenciones.selection__retention__state__draft
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_view_search
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__existing_invoice_ids
+msgid "Existing Invoice"
+msgstr "Facturas existentes"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_form_view
+msgid "Exportar a TXT"
+msgstr "Exportar a TXT"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_tree_view
+msgid "Exportar a TXT / XML"
+msgstr "Exportar a TXT / XML"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_form_view
+msgid "Exportar a XML"
+msgstr "Exportar a XML"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_form_view
+msgid "Factura"
+msgstr "Factura"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_form_view
+msgid "Facturas Agregadas"
+msgstr "Facturas Agregadas"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__invoice_date
+msgid "Fecha"
+msgstr "Fecha"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__invoice_ref
+msgid "Fiscal Correlative"
+msgstr "Referencia"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.account_move_in_view
+msgid "Generate Retention Theoretical"
+msgstr "Generar Teorico de Retenciones"
+
+#. module: retenciones
+#: model:ir.model.fields.selection,name:retenciones.selection__retention__type__iae
+#: model:ir.model.fields.selection,name:retenciones.selection__retention_tax__type__iae
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_view_search
+msgid "IAE"
+msgstr "IAE"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_bank_statement_line__iae_retention_tax_id
+#: model:ir.model.fields,field_description:retenciones.field_account_move__iae_retention_tax_id
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__iae_retention_amount
+#: model:ir.model.fields,field_description:retenciones.field_account_payment__iae_retention_tax_id
+#: model_terms:ir.ui.view,arch_db:retenciones.account_move_in_view
+msgid "IAE Retention"
+msgstr "Retencion de IAE"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__ref_iae_retention_amount
+msgid "IAE Retention (Referential)"
+msgstr "Retencion de IAE (Referencial)"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_res_company__iae_account_id
+#: model:ir.model.fields,field_description:retenciones.field_res_config_settings__iae_account_id
+msgid "IAE Retention Account"
+msgstr "Cuenta de Retencion de IAE"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_res_company__iae_retention_journal_id
+#: model:ir.model.fields,field_description:retenciones.field_res_config_settings__iae_retention_journal_id
+msgid "IAE Retention Journal"
+msgstr "Diario de retención IAE"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "IAE Retention Receipt"
+msgstr "Comprobante de retención de IAE"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__id
+#: model:ir.model.fields,field_description:retenciones.field_retention__id
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__id
+#: model:ir.model.fields,field_description:retenciones.field_retention_tax__id
+msgid "ID"
+msgstr "ID"
+
+#. module: retenciones
+#: model:ir.model.fields.selection,name:retenciones.selection__retention__type__islr
+#: model:ir.model.fields.selection,name:retenciones.selection__retention_tax__type__islr
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_view_search
+msgid "ISLR"
+msgstr "ISLR"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_bank_statement_line__islr_retention_tax_id
+#: model:ir.model.fields,field_description:retenciones.field_account_move__islr_retention_tax_id
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__islr_retention_amount
+#: model:ir.model.fields,field_description:retenciones.field_account_payment__islr_retention_tax_id
+#: model_terms:ir.ui.view,arch_db:retenciones.account_move_in_view
+msgid "ISLR Retention"
+msgstr "Retencion de ISLR"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__ref_islr_retention_amount
+msgid "ISLR Retention (Referential)"
+msgstr "Retencion de ISLR (Referencial)"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_res_company__islr_account_id
+#: model:ir.model.fields,field_description:retenciones.field_res_config_settings__islr_account_id
+msgid "ISLR Retention Account"
+msgstr "Cuenta de Retencion ISLR"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_res_company__islr_retention_journal_id
+#: model:ir.model.fields,field_description:retenciones.field_res_config_settings__islr_retention_journal_id
+msgid "ISLR Retention Journal"
+msgstr "Diario de Retencion de ISLR"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "ISLR Retention Receipt"
+msgstr "Comprobante de retención de ISLR"
+
+#. module: retenciones
+#: model:ir.model.fields.selection,name:retenciones.selection__retention__type__iva
+#: model:ir.model.fields.selection,name:retenciones.selection__retention_tax__type__iva
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_view_search
+msgid "IVA"
+msgstr "IVA"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_bank_statement_line__iva_retention_tax_id
+#: model:ir.model.fields,field_description:retenciones.field_account_move__iva_retention_tax_id
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__iva_retention_amount
+#: model:ir.model.fields,field_description:retenciones.field_account_payment__iva_retention_tax_id
+#: model:ir.model.fields,field_description:retenciones.field_res_partner__iva_retention_tax_id
+#: model:ir.model.fields,field_description:retenciones.field_res_users__iva_retention_tax_id
+#: model_terms:ir.ui.view,arch_db:retenciones.account_move_in_view
+msgid "IVA Retention"
+msgstr "Retencion de IVA"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__ref_iva_retention_amount
+msgid "IVA Retention (Referential)"
+msgstr "Retencion de IVA (Referencial)"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_res_company__iva_account_id
+#: model:ir.model.fields,field_description:retenciones.field_res_config_settings__iva_account_id
+msgid "IVA Retention Account"
+msgstr "Cuenta de Retencion de IVA"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_res_company__iva_retention_journal_id
+#: model:ir.model.fields,field_description:retenciones.field_res_config_settings__iva_retention_journal_id
+msgid "IVA Retention Journal"
+msgstr "Diario de Retencion de IVA"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "IVA Retention Receipt"
+msgstr "Comprobante de retención de IVA"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.view_form_account_move_retention_report_wizard
+msgid "Imprimir"
+msgstr "Imprimir"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_form_view
+msgid "Imprimir Comprobante"
+msgstr "Imprimir Comprobante"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__invoice_ids
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "Invoice date"
+msgstr "Fecha de Factura"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "Invoice number"
+msgstr "Número de Factura"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__is_legal_entity
+msgid "Is Legal Entity"
+msgstr "Entidad Juridica"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__journal_id
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_form_view
+msgid "Journal"
+msgstr "Diario"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__journal_currency
+msgid "Journal Currency"
+msgstr "Moneda de diario"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#: model:ir.model,name:retenciones.model_account_move
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__move_id
+#, python-format
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard____last_update
+#: model:ir.model.fields,field_description:retenciones.field_retention____last_update
+#: model:ir.model.fields,field_description:retenciones.field_retention_line____last_update
+#: model:ir.model.fields,field_description:retenciones.field_retention_tax____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__write_uid
+#: model:ir.model.fields,field_description:retenciones.field_retention__write_uid
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__write_uid
+#: model:ir.model.fields,field_description:retenciones.field_retention_tax__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__write_date
+#: model:ir.model.fields,field_description:retenciones.field_retention__write_date
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__write_date
+#: model:ir.model.fields,field_description:retenciones.field_retention_tax__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid ""
+"Ley del IVA, Art 11: La Administración Tributaria podrá asignar como reponsables del pago del impuesto, en\n"
+"              calidad de agentes de retención a quienes por sus funciones públicas o por razón de sus actividades privadas\n"
+"              intervengan en operaciones grabadas con el impuestos establecido en la ley."
+msgstr ""
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "Logo"
+msgstr "logo"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#, python-format
+msgid "Missing bill reference on invoice %s"
+msgstr "Falta referencia de factura en factura %s"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#, python-format
+msgid "Missing company ID in %s"
+msgstr "ID de empresa faltante en %s"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#, python-format
+msgid "Missing control number on invoice %s"
+msgstr "Número de control faltante en la factura %s"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#, python-format
+msgid "Missing partner ID in %s"
+msgstr "ID de socio faltante en %s"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#, python-format
+msgid "Missing transaction type on invoice %s"
+msgstr "Tipo de transacción faltante en la factura %s"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.account_move_retention_report_template
+msgid "Monto"
+msgstr "Monto"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__name
+#: model:ir.model.fields,field_description:retenciones.field_retention_tax__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: retenciones
+#: model_terms:ir.actions.act_window,help:retenciones.action_retention
+#: model_terms:ir.actions.act_window,help:retenciones.action_retention_line
+#: model_terms:ir.actions.act_window,help:retenciones.action_retention_tax
+msgid "No holds have been created yet"
+msgstr "Aún no se han creado retenciones"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "No tax credit"
+msgstr "Sin crédito fiscal"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid ""
+"Ordenanza sobre agente de retención de Impuestos Sobre Actividades Economicas:\n"
+"                Art 1: La presente ordenanza tiene por objeto establecer las personas que, son responsables en calidad de\n"
+"                agente de retención del pago del impuesto de patente de industria y Comercio, en los casos y en las\n"
+"                condiciones presistas de esta ordenanza."
+msgstr ""
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_form_view
+msgid "Other Information"
+msgstr "Otra información"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__partner_id
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_view_search
+msgid "Partner"
+msgstr "Proveedor"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__period
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_view_search
+msgid "Period"
+msgstr "Periodo"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/account_move.py:0
+#, python-format
+msgid "Please, add the invoice date to generate the Theoretical"
+msgstr "Por favor, agregue la fecha de la factura para generar la teórica"
+
+#. module: retenciones
+#: model:ir.model.fields.selection,name:retenciones.selection__retention__state__posted
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_view_search
+msgid "Posted"
+msgstr "Publicado"
+
+#. module: retenciones
+#: model:ir.model.fields.selection,name:retenciones.selection__account_move__iae_type__c
+msgid "Purchase"
+msgstr "Compra"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__ref_currency_id
+msgid "Ref Currency"
+msgstr "Moneda Referencial"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__registry_type
+msgid "Registry Type"
+msgstr "Tipo de registro"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.res_config_settings_view_form_inherit_retenciones
+msgid "Reports"
+msgstr "Informes"
+
+#. module: retenciones
+#: model:ir.actions.act_window,name:retenciones.action_retention
+#: model_terms:ir.ui.view,arch_db:retenciones.account_move_in_view
+msgid "Retenciones"
+msgstr "Retenciones"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__retention_id
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_form_view
+msgid "Retention"
+msgstr "Retencion"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "Retention Code"
+msgstr "Retention Code"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_bank_statement_line__retention_currency_id
+#: model:ir.model.fields,field_description:retenciones.field_account_move__retention_currency_id
+#: model:ir.model.fields,field_description:retenciones.field_account_payment__retention_currency_id
+msgid "Retention Currency"
+msgstr "Moneda de Retencion"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_view_search
+msgid "Retention Group By"
+msgstr "Agrupar Retenciones por"
+
+#. module: retenciones
+#: model:ir.actions.act_window,name:retenciones.action_retention_line
+#: model:ir.model.fields,field_description:retenciones.field_account_bank_statement_line__retention_line_id
+#: model:ir.model.fields,field_description:retenciones.field_account_move__retention_line_id
+#: model:ir.model.fields,field_description:retenciones.field_account_payment__retention_line_id
+msgid "Retention Line"
+msgstr "Línea de Retención"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__line_ids
+#: model:ir.ui.menu,name:retenciones.retention_line_menu
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_line_view_tree
+msgid "Retention Lines"
+msgstr "Líneas de Retenciones"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_res_company__retention_signature
+#: model:ir.model.fields,field_description:retenciones.field_res_config_settings__retention_signature
+msgid "Retention Signature"
+msgstr "Firma de retención"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__ret_tax_id
+msgid "Retention Tax"
+msgstr "Tasa de Retención"
+
+#. module: retenciones
+#: model:ir.ui.menu,name:retenciones.menu_settings_retentions
+msgid "Retention Taxes"
+msgstr "Tasas de Retención"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/account_move.py:0
+#, python-format
+msgid "Retention Theoretical"
+msgstr "Teórico de Retenciones"
+
+#. module: retenciones
+#: model:ir.model,name:retenciones.model_retention_line
+msgid "Retention lines"
+msgstr "Líneas de retención"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "Retention percentage"
+msgstr "Porcentaje de retención"
+
+#. module: retenciones
+#: model:ir.model,name:retenciones.model_retention_tax
+msgid "Retention percentage applied"
+msgstr "Porcentaje de Retención aplicado"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_tax__tax
+msgid "Retention rate"
+msgstr "Tasa de Retención"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_tax__type
+msgid "Retention type"
+msgstr "Tipo de Retención"
+
+#. module: retenciones
+#: model:ir.model,name:retenciones.model_retention
+#: model:ir.ui.menu,name:retenciones.menu_retentions_root
+#: model:ir.ui.menu,name:retenciones.retention_menu
+#: model:ir.ui.menu,name:retenciones.retentions_menu
+#: model_terms:ir.ui.view,arch_db:retenciones.res_config_settings_view_form_inherit_retenciones
+msgid "Retentions"
+msgstr "Retenciones"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__credit_note_ids
+msgid "Reversal Move"
+msgstr "Movimientos de Reversión"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_view_search
+msgid "Search Retention"
+msgstr "Buscar Retenciones"
+
+#. module: retenciones
+#: model:ir.model.fields.selection,name:retenciones.selection__account_move__iae_type__s
+msgid "Service"
+msgstr "Servicio"
+
+#. module: retenciones
+#: model:ir.actions.act_window,name:retenciones.action_retenciones_configuration
+msgid "Settings"
+msgstr "Ajustes"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__signature
+msgid "Signature"
+msgstr "Firma"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "Signature and seal of retained subject"
+msgstr "Firma y Sello de Sujeto Retenido"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "Signature and seal of retention agent"
+msgstr "Firma y Sello de Agente de Retención"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__state
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__state
+msgid "State"
+msgstr "Estado"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__amount_subtracting
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "Subtracting"
+msgstr "Sustraendo"
+
+#. module: retenciones
+#: model:ir.actions.act_window,name:retenciones.action_retention_tax
+msgid "Tasas de Retenciones"
+msgstr "Tasas de Retenciones"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__amount_tax
+msgid "Tax"
+msgstr "Impuestos"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__amount_untaxed
+msgid "Tax Free"
+msgstr "Sin crédito fiscal"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_tax__tax_name
+msgid "Tax name"
+msgstr "Nombre de tasa"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "Taxable base"
+msgstr "Base imponible"
+
+#. module: retenciones
+#: model:ir.actions.report,name:retenciones.action_account_move_retention_report
+msgid "Teorico de Retenciones"
+msgstr "Teorico de Retenciones"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.account_move_retention_report_template
+msgid "Teórico a pagar"
+msgstr "Teórico a pagar"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#, python-format
+msgid "The Credit Note %s must be in the retention"
+msgstr "La nota de crédito %s debe estar en la retención"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#, python-format
+msgid "The LAE of the company is missing in %s"
+msgstr "La LAE de la compañía falta en %s"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#, python-format
+msgid "The RUC of the company is missing in %s"
+msgstr "El RUC de la compañía falta en %s"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#, python-format
+msgid "The Retention Tax is required in all lines"
+msgstr "La tasa de retención se requiere en todas las líneas"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#, python-format
+msgid "The Transaction is required to IAE retentions"
+msgstr "El tipo de transacción se requiere para las retenciones IAE"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#, python-format
+msgid "The bill %s has already been a retention"
+msgstr "La factura %s ya tiene una retención"
+
+#. module: retenciones
+#: model:ir.model.fields,help:retenciones.field_retention__journal_currency
+msgid "The currency used to enter statement"
+msgstr "La moneda utilizada para el asiento"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#, python-format
+msgid "The journal is required to post the entry"
+msgstr "Se requiere el diario para publicar la entrada"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#, python-format
+msgid "The provider's IAE is missing in %s"
+msgstr "Falta el IAE del proveedor en %s"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#, python-format
+msgid "The provider's RUC is missing in %s"
+msgstr "Falta el RUC del proveedor en %s"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#, python-format
+msgid "The registry type is required to IVA retentions"
+msgstr "El tipo de registro se requiere a las retenciones IVA"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#, python-format
+msgid "Too many Periods for print"
+msgstr "Demasiados períodos de impresión"
+
+#. module: retenciones
+#. odoo-python
+#: code:addons/retenciones/models/retention.py:0
+#, python-format
+msgid "Too many retention types"
+msgstr "Demasiados tipos de retención"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__amount_total
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "Total"
+msgstr ""
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__amount_total
+msgid "Total Detained"
+msgstr "Total Retenido"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_form_view
+msgid "Total Detained:"
+msgstr "Total Retenido:"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_tree_view
+msgid "Total Retenido"
+msgstr "Total Retenido"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_bank_statement_line__total_detained
+#: model:ir.model.fields,field_description:retenciones.field_account_move__total_detained
+#: model:ir.model.fields,field_description:retenciones.field_account_payment__total_detained
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "Total detained"
+msgstr "Total Retenido"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "Total purchases including VAT"
+msgstr "Total de Factura"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__amount_total
+msgid "Total to pay"
+msgstr "Total a pagar"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_move_retention_wizard__ref_amount_total
+msgid "Total to pay (Referential)"
+msgstr "Total a pagar (Referencial)"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "Transaction Type"
+msgstr "Tipo de transacción"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_account_bank_statement_line__iae_type
+#: model:ir.model.fields,field_description:retenciones.field_account_move__iae_type
+#: model:ir.model.fields,field_description:retenciones.field_account_payment__iae_type
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__iae_type
+msgid "Transaction type"
+msgstr "Tipo de transacción"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__type
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__type
+#: model_terms:ir.ui.view,arch_db:retenciones.retention_view_search
+msgid "Type"
+msgstr "Tipo"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__amount_base
+msgid "Untaxed"
+msgstr "Base Imponible"
+
+#. module: retenciones
+#: model_terms:ir.ui.view,arch_db:retenciones.report_retention
+msgid "VAT tax"
+msgstr "Impuesto"
+
+#. module: retenciones
+#: model:ir.model.fields,field_description:retenciones.field_retention__partner_id
+#: model:ir.model.fields,field_description:retenciones.field_retention_line__partner_id
+msgid "Vendor"
+msgstr "Proveedor"
+
+#. module: retenciones
+#: model:ir.model,name:retenciones.model_account_move_retention_wizard
+msgid "Wizard for the theoretical report of retentions"
+msgstr "Asistente para el informe teórico de retenciones"
+
+#. module: retenciones
+#: model:ir.actions.report,print_report_name:retenciones.action_report_retention
+#: model:ir.actions.report,print_report_name:retenciones.action_report_text_iae_retention
+#: model:ir.actions.report,print_report_name:retenciones.action_report_text_islr_retention
+#: model:ir.actions.report,print_report_name:retenciones.action_report_text_iva_retention
+msgid "object.name"
+msgstr ""
