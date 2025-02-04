@@ -11,7 +11,7 @@
     'author': "INGEINT C.A",
     'website': "http://www.ingeint.com",
     'category': 'Services',
-    'version': '17.0.0',
+    'version': '17.0.0.1',
     'depends': ['base', 'account', 'contacts', 'portal' , 'payment'],
     'data': [
         'security/ir.model.access.csv',
