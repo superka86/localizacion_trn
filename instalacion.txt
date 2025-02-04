@@ -1,0 +1,4 @@
+Secuencia de instalacion
+=========================
+
+1. tribute_fields

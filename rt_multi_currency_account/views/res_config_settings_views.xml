@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="res_config_settings_view_form_inherit_tdv_multi_currency_account" model="ir.ui.view">
+    <field name="name">res.config.settings.view.form.inherit</field>
+    <field name="model">res.config.settings</field>
+    <field name="inherit_id" ref="account.res_config_settings_view_form" />
+    <field name="arch" type="xml">
+      <xpath
+        expr="//setting[@id='main_currency']"
+        position="after">
+        <setting>
+          <label for="second_currency_id" class="col-lg-3 o_light_label" />
+          <field name="second_currency_id" options="{'no_create': True, 'no_open': True}"
+            context="{'active_test': False}" />
+        </setting>
+        <setting>
+          <label for="fixed_ref" string="Fixed Currency" class="col-lg-3 o_light_label" />
+          <field name="fixed_ref" />
+        </setting>
+        <setting>
+          <label for="product_cost_updatable" string="Update Cost?" class="col-lg-3 o_light_label" />
+          <field name="product_cost_updatable" />
+        </setting>
+        <setting>
+          <button string="Update Prices" class="btn btn-primary" type="object" name="update_prices" />
+        </setting>
+      </xpath>
+    </field>
+  </record>
+
+</odoo>
